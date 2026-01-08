@@ -199,5 +199,5 @@ def upload_and_delete_one_video(video_folder):
         sys.exit(1)
 
 if __name__ == "__main__":
-    VIDEO_FOLDER = "videos"
+    VIDEO_FOLDER = "../videos"
     upload_and_delete_one_video(VIDEO_FOLDER)

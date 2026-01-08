@@ -4,8 +4,8 @@ on:
   push:
     branches: [ "main" ]
   schedule:
-    # Runs at 02:30 UTC (8:00 AM IST) and 14:30 UTC (8:00 PM IST)
-    - cron: '30 2,14 * * *'
+    # Runs every 8 hours: 00:00 UTC (5:30 AM IST), 08:00 UTC (1:30 PM IST), 16:00 UTC (9:30 PM IST)
+    - cron: '0 0,8,16 * * *'
   workflow_dispatch:
 
 jobs:
